@@ -1,0 +1,35 @@
+{
+  "name": "electron-app",
+  "version": "1.0.0",
+  "description": "this is a dummy app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev": "npx electronmon --trace-warnings .",
+    "build": "electron-builder"
+  },
+  "keywords": [
+    "electron",
+    "reactjs",
+    "typescript"
+  ],
+  "author": "Sachin Singh",
+  "license": "MIT",
+  "electronmon": {
+    "patterns": [
+      "!node_modules/**",
+      "!app/node_modules/**"
+    ]
+  },
+  "dependencies": {
+    "axios": "^1.2.3",
+    "electron-window-state": "^5.0.3",
+    "form-data": "^4.0.0",
+    "react-icons": "^5.2.1"
+  },
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
